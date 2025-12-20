@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | English Online</title>
+    <link rel="stylesheet" href="./apropos.css"> <!-- Utilise ton fichier CSS principal -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER (identique à tes autres pages) -->
+    <section class="header apropos-header">
+        <nav>
+           <a href="index.html"><img src="images/logo-1.png" alt="Logo English Online"></a> 
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="apropos.html" class="active">À PROPOS</a></li>
+                <li><a href="formations.html">FORMATIONS</a></li>
+                <li><a href="bibliotheque.html">BIBLIOTHEQUE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Notre Mission</h1>
+            <p>Rendre l'apprentissage de l'anglais accessible, efficace et inspirant pour tous</p>
+        </div> 
+    </section>
+
+    <!-- SECTION NOTRE HISTOIRE -->
+    <section class="histoire">
+        <div class="container">
+            <div class="histoire-content">
+                <div class="histoire-text">
+                    <h2>Notre Histoire</h2>
+                    <p>Fondé en 2025 par une équipe de professeurs passionnés, English Online est né du constat que l'apprentissage des langues devrait évoluer avec le numérique. Ce qui a commencé comme un petit projet local est aujourd'hui une plateforme utilisée par des milliers d'apprenants à travers le monde.</p>
+                    <p>Notre approche unique combine méthodologie éprouvée et innovations pédagogiques pour offrir une expérience d'apprentissage incomparable.</p>
+                </div>
+                <div class="histoire-img">
+                    <img src="images/apropos1.jpg" alt="Notre équipe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION NOS VALEURS -->
+    <section class="valeurs">
+        <div class="container">
+            <h2>Nos Valeurs</h2>
+            <div class="valeurs-grid">
+                <div class="valeur-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Excellence</h3>
+                    <p>Des contenus pédagogiques de qualité supérieure, constamment mis à jour.</p>
+                </div>
+                <div class="valeur-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Passion</h3>
+                    <p>Un engagement total pour la réussite de nos étudiants.</p>
+                </div>
+                <div class="valeur-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Des méthodes d'apprentissage modernes et efficaces.</p>
+                </div>
+                <div class="valeur-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Accessibilité</h3>
+                    <p>Des cours disponibles partout, pour tous les budgets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION EQUIPE -->
+    <section class="equipe">
+        <div class="container">
+            <h2>Notre Équipe</h2>
+            <p class="sous-titre">Des professionnels certifiés et expérimentés</p>
+            <div class="equipe-grid">
+                <div class="membre-card">
+                    <img src="images/prof1.jpg" alt="Steve Marcel">
+                    <h3>LEGBO Steve Marcel</h3>
+                    <p class="role">Fondateur & Directeur Pédagogique</p>
+                    <p class="bio">15 ans d'expérience dans l'enseignement de l'anglais langue étrangère.</p>
+                </div>
+                <div class="membre-card">
+                    <img src="images/prof2.jpg" alt="AKPA Serge">
+                    <h3>AKPA Serge</h3>
+                    <p class="role">Responsable Formations</p>
+                    <p class="bio">Spécialiste en préparation aux examens officiels (TOEFL, IELTS).</p>
+                </div>
+                <div class="membre-card">
+                    <img src="images/prof3.jpg" alt="ALAIN">
+                    <h3>Alain GUEDE</h3>
+                    <p class="role">Formateur Senior</p>
+                    <p class="bio">Expert en anglais des affaires et communication professionnelle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CHIFFRES -->
+    <section class="chiffres">
+        <div class="container">
+            <h2>English Online en chiffres</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="nombre" data-count="10000">0</span>+
+                    <p>Étudiants formés</p>
+                </div>
+                <div class="stat-item">
+                    <span class="nombre" data-count="98">0</span>%
+                    <p>De satisfaction</p>
+                </div>
+                <div class="stat-item">
+                    <span class="nombre" data-count="25">0</span>
+                    <p>Professeurs certifiés</p>
+                </div>
+                <div class="stat-item">
+                    <span class="nombre" data-count="15">0</span>
+                    <p>Pays représentés</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION TEMOIGNAGES -->
+    <section class="temoignages">
+        <div class="container">
+            <h2>Témoignages</h2>
+            <div class="temoignages-slider">
+                <div class="temoignage active">
+                    <p class="texte">"English Online a transformé mon anglais professionnel. En 6 mois, j'ai pu obtenir une promotion grâce à mes nouvelles compétences!"</p>
+                    <p class="auteur">- Thomas, 34 ans</p>
+                </div>
+                <div class="temoignage">
+                    <p class="texte">"Les cours sont parfaitement adaptés à mon niveau et à mes objectifs. Je recommande vivement!"</p>
+                    <p class="auteur">- Sophie, 28 ans</p>
+                </div>
+                <div class="temoignage">
+                    <p class="texte">"Préparation IELTS excellente. J'ai obtenu le score nécessaire pour mon université dream!"</p>
+                    <p class="auteur">- Ahmed, 21 ans</p>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots"></div>
+                <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (identique à tes autres pages) -->
+    <footer class="footer">
+        <section class="cta">
+            <h1>Prêt à commencer votre apprentissage de l'anglais ?<br>Choisissez votre formation dès maintenant</h1>
+            <a href="contact.html" class="hero-btn">NOUS CONTACTER</a>
+        </section>
+    
+        <section class="footer">
+            <h4>À propos de nous</h4>
+            <p>English Online est une plateforme d'apprentissage de l'anglais en ligne innovante, offrant des cours de qualité <br>adaptés à tous les niveaux avec des professeurs certifiés et une méthodologie éprouvée.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">Réalisé par <i class="far fa-heart"></i> LEGBO STEVE MARCEL</p>
+        </section>
+    </footer>
+
+    <script>
+        // Menu mobile (identique à tes autres pages)
+        function showMenu() {
+            document.getElementById("navLinks").style.right = "0";
+        }
+        
+        function hideMenu() {
+            document.getElementById("navLinks").style.right = "-200px";
+        }
+
+        // Animation des chiffres
+        function animateNumbers() {
+            const numberElements = document.querySelectorAll('.nombre');
+            
+            numberElements.forEach(element => {
+                const target = parseInt(element.getAttribute('data-count'));
+                const duration = 2000; // 2 secondes
+                const step = target / (duration / 16); // 60fps
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        clearInterval(timer);
+                        current = target;
+                    }
+                    element.textContent = Math.floor(current);
+                }, 16);
+            });
+        }
+
+        // Slider témoignages
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.temoignage');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+        
+        document.querySelector('.next').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        });
+        
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        // Au chargement de la page
+        window.onload = function() {
+            animateNumbers();
+            showSlide(0);
+        };
+    </script>
+</body>
+</html>

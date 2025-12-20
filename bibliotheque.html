@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque | English Online</title>
+    <link rel="stylesheet" href="./bibliotheque.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <section class="header formations-header">
+        <nav>
+           <a href="index.html"><img src="images/logo-1.png" alt="Logo English Online"></a> 
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="apropos.html">À PROPOS</a></li>
+                <li><a href="formations.html">FORMATIONS</a></li>
+                <li><a href="bibliotheque.html">BIBLIOTHEQUE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <br>
+            <br>
+            <br>
+            <h1>Bibliothèque English Online</h1>
+            <p>Découvrez notre collection complète de livres, manuels et ressources pour perfectionner votre anglais</p>
+            <a href="#" class="hero-btn">S'inscrire</a>
+        </div> 
+    </section>
+    
+    <main class="container">
+        <!-- BARRE DE RECHERCHE -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Rechercher un livre, un auteur ou un thème...">
+            <button class="search-btn"><i class="fas fa-search"></i> Rechercher</button>
+        </div>
+        
+        <!-- FILTRES -->
+        <div class="filters">
+            <button class="filter-btn active">Tous</button>
+            <button class="filter-btn">Grammaire</button>
+            <button class="filter-btn">Vocabulaire</button>
+            <button class="filter-btn">Conversation</button>
+            <button class="filter-btn">Examen</button>
+            <button class="filter-btn">Littérature</button>
+        </div>
+        
+        <!-- GRILLE DE LIVRES -->
+        <div class="books-grid">
+            <!-- Livre 1 -->
+            <div class="book-card" data-id="1">
+                <a href="../documents/livre1.pdf" class="book-link" onclick="showModal(event, 1)">
+                    <span class="book-badge">Nouveau</span>
+                    <img src="./images/livre1.jpg" alt="English Grammar in Use" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">English Grammar in Use</h3>
+                        <p class="book-author">Raymond Murphy</p>
+                        <div class="book-meta">
+                            <span class="book-category">Grammaire</span>
+                            <span class="book-rating">
+                                <i class="fas fa-star"></i> 4.8
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Livre 2 -->
+            <div class="book-card" data-id="2">
+                <a href="#book-2" class="book-link" onclick="showModal(event, 2)">
+                    <img src="./images/livre2.jpg" alt="Vocabulary Builder" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">English Vocabulary Builder</h3>
+                        <p class="book-author">DK Publishing</p>
+                        <div class="book-meta">
+                            <span class="book-category">Vocabulaire</span>
+                            <span class="book-rating">
+                                <i class="fas fa-star"></i> 4.6
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Livre 3 -->
+            <div class="book-card" data-id="3">
+                <a href="#book-3" class="book-link" onclick="showModal(event, 3)">
+                    <span class="book-badge">Populaire</span>
+                    <img src="./images/livre3.jpg" alt="IELTS Preparation" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Official IELTS Prep Guide</h3>
+                        <p class="book-author">Cambridge English</p>
+                        <div class="book-meta">
+                            <span class="book-category">Examen</span>
+                            <span class="book-rating">
+                                <i class="fas fa-star"></i> 4.9
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Livre 4 -->
+            <div class="book-card" data-id="4">
+                <a href="#book-4" class="book-link" onclick="showModal(event, 4)">
+                    <img src="./images/livre4.jpg" alt="English Conversation" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Practice Makes Perfect: English Conversation</h3>
+                        <p class="book-author">Jean Yates</p>
+                        <div class="book-meta">
+                            <span class="book-category">Conversation</span>
+                            <span class="book-rating">
+                                <i class="fas fa-star"></i> 4.5
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Livre 5 -->
+            <div class="book-card" data-id="5">
+                <a href="#book-5" class="book-link" onclick="showModal(event, 5)">
+                    <img src="./images/livre5.jpeg" alt="Short Stories" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Short Stories in English</h3>
+                        <p class="book-author">Olly Richards</p>
+                        <div class="book-meta">
+                            <span class="book-category">Littérature</span>
+                            <span class="book-rating">
+                                <i class="fas fa-star"></i> 4.7
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Livre 6 -->
+            <div class="book-card" data-id="6">
+                <a href="#book-6" class="book-link" onclick="showModal(event, 6)">
+                    <img src="images/livre6.jpg" alt="Business English" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Business English Handbook</h3>
+                        <p class="book-author">Paul Emmerson</p>
+                        <div class="book-meta">
+                            <span class="book-category">Professionnel</span>
+                            <span class="book-rating">
+                                <i class="fas fa-star"></i> 4.4
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Livre 7 -->
+            <div class="book-card" data-id="7">
+                <a href="#book-7" class="book-link" onclick="showModal(event, 7)">
+                    <span class="book-badge">Best-seller</span>
+                    <img src="./images/livre7.jpg" alt="Phrasal Verbs" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Phrasal Verbs in Context</h3>
+                        <p class="book-author">Peter Dainty</p>
+                        <div class="book-meta">
+                            <span class="book-category">Vocabulaire</span>
+                            <span class="book-rating">
+                                <i class="fas fa-star"></i> 4.6
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Livre 8 -->
+            <div class="book-card" data-id="8">
+                <a href="#book-8" class="book-link" onclick="showModal(event, 8)">
+                    <img src="images/livre8.jpg" alt="English Pronunciation" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Perfecting English Pronunciation</h3>
+                        <p class="book-author">Susan Cameron</p>
+                        <div class="book-meta">
+                            <span class="book-category">Prononciation</span>
+                            <span class="book-rating">
+                                <i class="fas fa-star"></i> 4.3
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- PAGINATION -->
+        <div class="pagination">
+            <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">4</button>
+            <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+    
+    <!-- MODAL -->
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Détails du livre</h2>
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modal-cover" src="" alt="Couverture du livre" class="modal-book-cover">
+                <div class="modal-book-info">
+                    <h3 id="modal-book-title" class="modal-book-title"></h3>
+                    <p id="modal-book-author" class="modal-book-author"></p>
+                    <p id="modal-book-description" class="modal-book-description"></p>
+                </div>
+                <div class="modal-book-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Catégorie</div>
+                        <div id="modal-book-category" class="detail-value"></div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Niveau</div>
+                        <div id="modal-book-level" class="detail-value"></div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Pages</div>
+                        <div id="modal-book-pages" class="detail-value"></div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Évaluation</div>
+                        <div id="modal-book-rating" class="detail-value"></div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-primary"><i class="fas fa-book-open"></i> Lire un extrait</button>
+                    <button class="btn btn-secondary"><i class="fas fa-shopping-cart"></i> Acheter le livre</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section class="cta">
+            <h1>Prêt à commencer votre apprentissage de l'anglais ?<br>Choisissez votre formation dès maintenant</h1>
+            <a href="#" class="hero-btn">NOUS CONTACTER</a>
+        </section>
+    
+        <!-- FOOTER SECTION -->
+        <section class="footer">
+            <h4>À propos de nous</h4>
+            <p>English Online est une plateforme d'apprentissage de l'anglais en ligne innovante, offrant des cours de qualité <br>adaptés à tous les niveaux avec des professeurs certifiés et une méthodologie éprouvée.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">Réalisé par <i class="far fa-heart"></i> LEGBO STEVE MARCEL</p>
+        </section>
+    </footer>
+
+    <script>
+        // Données des livres
+        const booksData = {
+            1: {
+                title: "English Grammar in Use",
+                author: "Raymond Murphy",
+                description: "La référence mondiale pour l'apprentissage de la grammaire anglaise. Avec des explications claires et des exercices pratiques, ce livre est idéal pour les étudiants de niveau intermédiaire.",
+                category: "Grammaire",
+                level: "Intermédiaire",
+                pages: "380",
+                rating: "4.8/5",
+                cover: "./images/livre1.jpg",
+            },
+            2: {
+                title: "English Vocabulary Builder",
+                author: "DK Publishing",
+                description: "Un guide complet pour enrichir votre vocabulaire anglais avec plus de 3,000 mots et expressions classés par thèmes.",
+                category: "Vocabulaire",
+                level: "Tous niveaux",
+                pages: "256",
+                rating: "4.6/5",
+                cover: "./images/livre2.jpg",
+            },
+            3: {
+                title: "Official IELTS Prep Guide",
+                author: "Cambridge English",
+                description: "Le guide officiel pour préparer l'examen IELTS avec des tests complets, des conseils d'experts et des stratégies pour réussir.",
+                category: "Examen",
+                level: "Avancé",
+                pages: "400",
+                rating: "4.9/5",
+                cover: "./images/livre3.jpg",
+            },
+            4: {
+                title: "Practice Makes Perfect: English Conversation",
+                author: "Jean Yates",
+                description: "Maîtrisez les conversations en anglais dans des situations réelles avec ce livre rempli de dialogues pratiques et d'exercices.",
+                category: "Conversation",
+                level: "Intermédiaire",
+                pages: "192",
+                rating: "4.5/5",
+                cover: "./images/livre4.jpg"
+            },
+            5: {
+                title: "Short Stories in English",
+                author: "Olly Richards",
+                description: "Améliorez votre anglais grâce à ces nouvelles captivantes spécialement écrites pour les apprenants de langue anglaise.",
+                category: "Littérature",
+                level: "Intermédiaire",
+                pages: "224",
+                rating: "4.7/5",
+                cover: "./images/livre5.jpeg"
+            },
+            6: {
+                title: "Business English Handbook",
+                author: "Paul Emmerson",
+                description: "Le guide essentiel pour maîtriser l'anglais des affaires, des réunions aux présentations en passant par la correspondance professionnelle.",
+                category: "Professionnel",
+                level: "Intermédiaire",
+                pages: "176",
+                rating: "4.4/5",
+                cover: "./images/livre6.jpg"
+            },
+            7: {
+                title: "Phrasal Verbs in Context",
+                author: "Peter Dainty",
+                description: "Apprenez et maîtrisez plus de 300 verbes à particules essentiels à travers des dialogues et situations du quotidien.",
+                category: "Vocabulaire",
+                level: "Intermédiaire",
+                pages: "128",
+                rating: "4.6/5",
+                cover: "./images/livre7.jpg"
+            },
+            8: {
+                title: "Perfecting English Pronunciation",
+                author: "Susan Cameron",
+                description: "Un programme complet pour améliorer votre prononciation anglaise et réduire votre accent grâce à des exercices pratiques.",
+                category: "Prononciation",
+                level: "Tous niveaux",
+                pages: "208",
+                rating: "4.3/5",
+                cover: "./images/livre8.jpg"
+            }
+        };
+
+        // Fonction pour afficher le modal
+        function showModal(event, bookId) {
+            event.preventDefault();
+            const book = booksData[bookId];
+            const modal = document.getElementById('book-modal');
+            
+            // Remplir les informations du livre
+            document.getElementById('modal-title').textContent = book.title;
+            document.getElementById('modal-book-title').textContent = book.title;
+            document.getElementById('modal-book-author').textContent = `Par ${book.author}`;
+            document.getElementById('modal-book-description').textContent = book.description;
+            document.getElementById('modal-book-category').textContent = book.category;
+            document.getElementById('modal-book-level').textContent = book.level;
+            document.getElementById('modal-book-pages').textContent = book.pages;
+            document.getElementById('modal-book-rating').textContent = book.rating;
+            document.getElementById('modal-cover').src = book.cover;
+            document.getElementById('modal-cover').alt = `Couverture de ${book.title}`;
+            
+            // Afficher le modal
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Fonction pour fermer le modal
+        function closeModal() {
+            const modal = document.getElementById('book-modal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Fermer le modal si on clique en dehors
+        window.onclick = function(event) {
+            const modal = document.getElementById('book-modal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Fonctionnalité de recherche
+        document.querySelector('.search-btn').addEventListener('click', function() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const books = document.querySelectorAll('.book-card');
+            
+            books.forEach(book => {
+                const title = book.querySelector('.book-title').textContent.toLowerCase();
+                const author = book.querySelector('.book-author').textContent.toLowerCase();
+                const category = book.querySelector('.book-category').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || author.includes(searchTerm) || category.includes(searchTerm)) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        });
+        
+        // Fonctionnalité de filtrage
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.textContent;
+                const books = document.querySelectorAll('.book-card');
+                
+                books.forEach(book => {
+                    const category = book.querySelector('.book-category').textContent;
+                    
+                    if (filter === 'Tous' || category === filter) {
+                        book.style.display = 'block';
+                    } else {
+                        book.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Fonctionnalité de pagination
+        document.querySelectorAll('.page-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (!this.classList.contains('active')) {
+                    document.querySelectorAll('.page-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    // Ici vous pourriez charger dynamiquement le contenu de la page
+                }
+            });
+        });
+
+        // Fonctions pour le menu mobile
+        function showMenu() {
+            document.getElementById('navLinks').style.right = "0";
+        }
+        
+        function hideMenu() {
+            document.getElementById('navLinks').style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

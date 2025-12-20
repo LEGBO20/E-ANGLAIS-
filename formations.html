@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations | English Online</title>
+    <link rel="stylesheet" href="./formations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="header formations-header">
+        <nav>
+           <a href="index.html"><img src="images/logo-1.png" alt="Logo English Online"></a> 
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="apropos.html">À PROPOS</a></li>
+                <li><a href="formations.html">FORMATIONS</a></li>
+                <li><a href="bibliotheque.html">BLIBLIOTHEQUE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <br>
+            <br>
+            <br>
+            <h1>Nos Formations en Anglais</h1>
+            <p>Découvrez notre catalogue complet de formations adaptées à tous les niveaux et objectifs.</p>
+            <a href="#" class="hero-btn">S'inscrire</a>
+        </div> 
+    </section>
+
+    <!-- FORMATIONS SECTION -->
+    <section class="formations">
+        <h1>Nos Programmes de Formation</h1>
+        <p>Choisissez le parcours qui correspond à vos besoins et objectifs d'apprentissage.</p>
+        
+        <div class="row">
+            <div class="formations-col">
+                <img src="images/debutant.jpg" alt="Formation Débutant">
+                <h3>Anglais Débutant</h3>
+                <div class="formation-content">
+                    <p>Maîtrisez les bases de l'anglais avec notre programme complet pour débutants.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Vocabulaire essentiel</li>
+                        <li><i class="fas fa-check-circle"></i> Grammaire de base</li>
+                        <li><i class="fas fa-check-circle"></i> Expressions courantes</li>
+                        <li><i class="fas fa-check-circle"></i> 30 heures de formation</li>
+                    </ul>
+                    <div class="formation-footer">
+                        <span class="price"><pre>400 000 FCFA / mois</pre></span>
+                        <a href="#" class="hero-btn">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="formations-col highlight">
+                <div class="popular-badge">Populaire</div>
+                <img src="images/intermediaire.jpg" alt="Formation Intermédiaire">
+                <h3>Anglais Intermédiaire</h3>
+                <div class="formation-content">
+                    <p>Développez votre aisance à l'oral et à l'écrit avec ce programme complet.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Conversation fluide</li>
+                        <li><i class="fas fa-check-circle"></i> Grammaire avancée</li>
+                        <li><i class="fas fa-check-circle"></i> Compréhension écrite/orale</li>
+                        <li><i class="fas fa-check-circle"></i> 50 heures de formation</li>
+                    </ul>
+                    <div class="formation-footer">
+                        <span class="price"><pre>600 000 FCFA / mois</pre></span>
+                        <a href="#" class="hero-btn">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="formations-col">
+                <img src="images/avance.jpg" alt="Formation Avancée">
+                <h3>Anglais Avancé + Certification</h3>
+                <div class="formation-content">
+                    <p>Perfectionnez votre anglais et préparez-vous aux certifications internationales.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Préparation IELTS/TOEFL</li>
+                        <li><i class="fas fa-check-circle"></i> Anglais professionnel</li>
+                        <li><i class="fas fa-check-circle"></i> Expression écrite avancée</li>
+                        <li><i class="fas fa-check-circle"></i> 80 heures de formation</li>
+                    </ul>
+                    <div class="formation-footer">
+                        <span class="price"><pre>1 000 000 FCFA / mois</pre></span>
+                        <a href="#" class="hero-btn">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATION DETAILS SECTION -->
+    <section class="formation-details">
+        <h1>Détails de Nos Formations</h1>
+        <p>Découvrez en détail ce que nos formations peuvent vous apporter.</p>
+        
+        <div class="details-container">
+            <div class="details-tabs">
+                <button class="tab-btn active" data-tab="debutant">Débutant</button>
+                <button class="tab-btn" data-tab="intermediaire">Intermédiaire</button>
+                <button class="tab-btn" data-tab="avance">Avancé</button>
+            </div>
+            
+            <div class="details-content">
+                <div class="tab-content active" id="debutant">
+                    <h2>Programme Débutant</h2>
+                    <div class="programme-grid">
+                        <div class="module">
+                            <h3><i class="fas fa-book-open"></i> Module 1: Les Bases</h3>
+                            <ul>
+                                <li>Alphabet et prononciation</li>
+                                <li>Chiffres et dates</li>
+                                <li>Salutations et présentations</li>
+                            </ul>
+                        </div>
+                        <div class="module">
+                            <h3><i class="fas fa-comments"></i> Module 2: Communication Quotidienne</h3>
+                            <ul>
+                                <li>Demander son chemin</li>
+                                <li>Commander au restaurant</li>
+                                <li>Faire des achats</li>
+                            </ul>
+                        </div>
+                        <div class="module">
+                            <h3><i class="fas fa-pencil-alt"></i> Module 3: Grammaire Fondamentale</h3>
+                            <ul>
+                                <li>Verbe "to be"</li>
+                                <li>Articles et pluriels</li>
+                                <li>Pronoms personnels</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="formation-results">
+                        <h3>Résultats Attendus</h3>
+                        <p>À la fin de cette formation, vous serez capable de comprendre et d'utiliser des expressions familières et quotidiennes ainsi que des énoncés très simples qui visent à satisfaire des besoins concrets.</p>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="intermediaire">
+                    <h2>Programme Intermédiaire</h2>
+                    <div class="programme-grid">
+                        <div class="module">
+                            <h3><i class="fas fa-headphones"></i> Module 1: Compréhension Orale</h3>
+                            <ul>
+                                <li>Comprendre des conversations courantes</li>
+                                <li>Suivre des instructions complexes</li>
+                                <li>Reconnaître différents accents</li>
+                            </ul>
+                        </div>
+                        <div class="module">
+                            <h3><i class="fas fa-microphone"></i> Module 2: Expression Orale</h3>
+                            <ul>
+                                <li>Participer à des conversations</li>
+                                <li>Exprimer des opinions</li>
+                                <li>Présenter des arguments</li>
+                            </ul>
+                        </div>
+                        <div class="module">
+                            <h3><i class="fas fa-file-alt"></i> Module 3: Rédaction</h3>
+                            <ul>
+                                <li>Écrire des emails professionnels</li>
+                                <li>Rédiger des rapports simples</li>
+                                <li>Exprimer des idées par écrit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="formation-results">
+                        <h3>Résultats Attendus</h3>
+                        <p>À la fin de cette formation, vous serez capable de comprendre les points essentiels d'une discussion et de vous exprimer de manière claire et détaillée sur une grande gamme de sujets.</p>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="avance">
+                    <h2>Programme Avancé</h2>
+                    <div class="programme-grid">
+                        <div class="module">
+                            <h3><i class="fas fa-briefcase"></i> Module 1: Anglais Professionnel</h3>
+                            <ul>
+                                <li>Vocabulaire des affaires</li>
+                                <li>Présentations professionnelles</li>
+                                <li>Négociation en anglais</li>
+                            </ul>
+                        </div>
+                        <div class="module">
+                            <h3><i class="fas fa-graduation-cap"></i> Module 2: Préparation aux Tests</h3>
+                            <ul>
+                                <li>Stratégies pour l'IELTS/TOEFL</li>
+                                <li>Exercices types</li>
+                                <li>Simulations d'examen</li>
+                            </ul>
+                        </div>
+                        <div class="module">
+                            <h3><i class="fas fa-globe"></i> Module 3: Culture et Nuances</h3>
+                            <ul>
+                                <li>Expressions idiomatiques</li>
+                                <li>Variantes régionales</li>
+                                <li>Communication interculturelle</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="formation-results">
+                        <h3>Résultats Attendus</h3>
+                        <p>À la fin de cette formation, vous serez capable de comprendre une grande gamme de textes exigeants et de reconnaître des significations implicites. Vous pourrez vous exprimer couramment et avec précision dans des contextes professionnels et académiques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATION FEATURES SECTION -->
+    <section class="formation-features">
+        <h1>Nos Atouts Pédagogiques</h1>
+        <p>Découvrez ce qui rend nos formations uniques et efficaces.</p>
+        
+        <div class="features-grid">
+            <div class="feature">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Professeurs Qualifiés</h3>
+                <p>Nos formateurs sont tous certifiés et expérimentés dans l'enseignement de l'anglais langue étrangère.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Plateforme Interactive</h3>
+                <p>Accédez à des exercices interactifs, des quiz et des outils d'évaluation en temps réel.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-comments"></i>
+                <h3>Classes Virtuelles</h3>
+                <p>Participez à des sessions en direct avec vos professeurs et d'autres étudiants.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Application Mobile</h3>
+                <p>Apprenez où que vous soyez avec notre application mobile disponible sur iOS et Android.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-certificate"></i>
+                <h3>Certification</h3>
+                <p>Obtenez un certificat reconnu à la fin de chaque formation validée.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <h3>Communauté</h3>
+                <p>Rejoignez notre communauté d'apprenants pour échanger et pratiquer ensemble.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <h1>Témoignages de nos étudiants</h1>
+        <p>Découvrez ce que nos étudiants pensent de nos formations.</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user1.jpg" alt="Étudiante MIKE">
+                <div>
+                    <p>"La formation débutant m'a donné une excellente base en anglais. Les modules sont bien structurés et les exercices très pratiques."</p>
+                    <h3>GBLEHE MIKE</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user2.jpg" alt="Étudiant LOBA">
+                <div>
+                    <p>"La préparation à l'IELTS était parfaite. J'ai obtenu un score de 7.5 grâce aux conseils de mes professeurs et aux simulations d'examen."</p>
+                    <h3>AZALE LOBA CHARDY</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION SECTION -->
+    <section class="cta">
+        <h1>Prêt à commencer votre apprentissage de l'anglais ?<br>Choisissez votre formation dès maintenant</h1>
+        <a href="#" class="hero-btn">NOUS CONTACTER</a>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section class="footer">
+        <h4>À propos de nous</h4>
+        <p>English Online est une plateforme d'apprentissage de l'anglais en ligne innovante, offrant des cours de qualité <br>adaptés à tous les niveaux avec des professeurs certifiés et une méthodologie éprouvée.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">Réalisé par <i class="far fa-heart"></i> LEGBO STEVE MARCEL</p>
+    </section>
+
+    <!-- JavaScript pour la page -->
+    <script>
+        // Menu mobile
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+        }
+        
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            setTimeout(() => {
+                navLinks.style.display = "none";
+            }, 500);
+        }
+
+        // Fermer le menu quand on clique sur un lien
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', hideMenu);
+        });
+
+        // Adapter le menu en fonction de la taille de l'écran
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 700) {
+                navLinks.style.right = "0";
+                navLinks.style.display = "block";
+            } else {
+                navLinks.style.right = "-200px";
+                navLinks.style.display = "none";
+            }
+        });
+
+        // Système d'onglets pour les détails des formations
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Retirer la classe active de tous les boutons et contenus
+                tabBtns.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Ajouter la classe active au bouton cliqué
+                btn.classList.add('active');
+                
+                // Afficher le contenu correspondant
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
