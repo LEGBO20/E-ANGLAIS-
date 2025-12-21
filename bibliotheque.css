@@ -968,3 +968,184 @@ nav .fa {
         text-shadow: 2px 5px rgba(0, 0, 0, 0.7);
     }
 }
+/* POUR VERIFICATION PLUTARD */
+/* ============ MENU MOBILE ============ */
+
+/* Icônes du menu (bars et times) */
+nav .fa {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Navigation mobile - version réduite */
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 25px;
+    }
+    
+    nav img {
+        width: 150px;
+        z-index: 1001;
+    }
+    
+    .nav-links {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 999;
+        transition: right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        padding-top: 80px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links ul li {
+        display: block;
+        margin: 15px 0;
+        padding: 10px 30px;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-links ul li:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateX(5px);
+    }
+    
+    .nav-links ul li::after {
+        display: none;
+    }
+    
+    .nav-links ul li a {
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .nav-links ul li a:hover {
+        color: white;
+    }
+    
+    nav .fa {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    nav .fa:hover {
+        color: #f44336;
+        background: white;
+    }
+    
+    .fa-bars {
+        display: block !important;
+    }
+    
+    .fa-times {
+        position: fixed;
+        top: 25px;
+        right: 210px;
+        background: none;
+    }
+    
+    /* Empêche le scroll quand le menu est ouvert */
+    body.menu-open {
+        overflow: hidden;
+    }
+    
+    .header {
+        overflow-x: hidden;
+    }
+}
+
+/* Améliorations pour très petits écrans */
+@media (max-width: 480px) {
+    .nav-links {
+        width: 180px;
+    }
+    
+    nav {
+        padding: 15px 20px;
+    }
+    
+    nav img {
+        width: 130px;
+    }
+    
+    .fa-times {
+        right: 190px;
+    }
+    
+    .nav-links ul li {
+        padding: 8px 25px;
+        margin: 12px 0;
+    }
+    
+    .nav-links ul li a {
+        font-size: 15px;
+    }
+}
+
+/* Pour les très grands écrans */
+@media (min-width: 769px) {
+    .nav-links ul li:hover::after {
+        width: 100%;
+    }
+}
+
+/* Amélioration de l'accessibilité au focus */
+.nav-links ul li a:focus {
+    outline: 2px solid #f44336;
+    outline-offset: 4px;
+    border-radius: 3px;
+}
+
+/* Animation pour l'icône du menu */
+.fa-bars {
+    transition: transform 0.3s ease;
+}
+
+.fa-bars:hover {
+    transform: scale(1.1);
+}
+
+.fa-times {
+    transition: transform 0.3s ease;
+}
+
+.fa-times:hover {
+    transform: rotate(90deg);
+}
+
+/* Overlay pour mobile */
+@media (max-width: 768px) {
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+    
+    .nav-overlay.active {
+        display: block;
+    }
+}
+/* POUR VERIFICATION PLUTARD */
