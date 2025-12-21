@@ -89,6 +89,7 @@ nav img {
     font-size: 26px;
     color: #fff;
     line-height: 1.6;
+    text-shadow: 2px 5px rgb(119, 58, 58);
 }
 
 .hero-btn {
@@ -343,7 +344,7 @@ nav img {
 .cta {
     width: 90%;
     margin: 100px auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/banner2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/training.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -712,6 +713,7 @@ nav .fa {
     
     .text-box p {
         font-size: 20px;
+        text-shadow: 1px 3px rgb(119, 58, 58);
     }
     
     .course h1,
@@ -746,30 +748,29 @@ nav .fa {
         flex: 1 1 100%;
     }
     
-    .nav-links ul li {
-        display: block;
-        text-align: center;
-        padding: 12px 0;
-    }
-    
     .nav-links {
         position: fixed;
-        background: rgba(0, 0, 0, 0.9);
+        background: #f44336;
         height: 100vh;
         width: 200px;
         top: 0;
         right: -200px;
         text-align: left;
         z-index: 2;
-        transition: right 0.5s;
+        transition: all 0.5s ease;
+    }
+    
+    .nav-links ul li {
+        display: block;
+        margin: 20px 0;
+    }
+    
+    .nav-links ul {
+        padding: 30px;
     }
     
     nav .fa {
         display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 3;
     }
     
     .nav-links.active {
@@ -809,6 +810,10 @@ nav .fa {
     .tab-btn {
         white-space: nowrap;
     }
+    
+    .layer:hover {
+        background: rgba(226, 0, 0, 0.7);
+    }
 }
 
 /* Pour mobiles (480px et moins) */
@@ -821,6 +826,7 @@ nav .fa {
     .text-box p {
         font-size: 16px;
         margin: 5px 0 30px;
+        text-shadow: 1px 2px rgb(119, 58, 58);
     }
     
     .hero-btn {
@@ -916,6 +922,30 @@ nav .fa {
     .copyright {
         font-size: 12px;
     }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .course-col, .campus-col, .facilities-col, .testimonial-col {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .campus-col img {
+        height: 250px;
+    }
+    
+    .testimonial-col {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .testimonial-col img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 /* Pour très petits mobiles (360px et moins) */
@@ -926,6 +956,7 @@ nav .fa {
     
     .text-box p {
         font-size: 14px;
+        text-shadow: 1px 2px rgb(119, 58, 58);
     }
     
     .hero-btn {
@@ -1011,6 +1042,7 @@ nav .fa {
     .text-box p {
         font-size: 14px;
         margin: 5px 0 20px;
+        text-shadow: 1px 2px rgb(119, 58, 58);
     }
     
     nav {
