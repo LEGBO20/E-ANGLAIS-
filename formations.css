@@ -115,7 +115,7 @@ nav img {
 
 /* Course Section */
 .course {
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding: 100px 0;
@@ -146,7 +146,7 @@ nav img {
 }
 
 .course-col {
-    flex-basis: 31%;
+    flex: 1 1 300px;
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -168,14 +168,14 @@ nav img {
 
 /* Campus Section */
 .campus {
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding: 100px 0 50px;
 }
 
 .campus-col {
-    flex-basis: 32%;
+    flex: 1 1 300px;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -232,7 +232,7 @@ nav img {
 
 /* Facilities Section */
 .facilities {
-    width: 80%;
+    width: 90%;
     margin: 100px auto 0;
     text-align: center;
     padding: 100px 0;
@@ -253,7 +253,7 @@ nav img {
 }
 
 .facilities-col {
-    flex-basis: 31%;
+    flex: 1 1 300px;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
@@ -289,14 +289,14 @@ nav img {
 
 /* Testimonials Section */
 .testimonials {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding-top: 100px;
     text-align: center;
 }
 
 .testimonial-col {
-    flex-basis: 48%;
+    flex: 1 1 300px;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
@@ -304,6 +304,7 @@ nav img {
     padding: 25px;
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -313,6 +314,7 @@ nav img {
     margin-right: 30px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 15px;
 }
 
 .testimonial-content {
@@ -339,7 +341,7 @@ nav img {
 
 /* Call to Action Section */
 .cta {
-    width: 80%;
+    width: 90%;
     margin: 100px auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/banner2.jpg);
     background-position: center;
@@ -357,29 +359,10 @@ nav img {
 }
 
 /* Footer Section */
-/* Call to Action */
-.cta {
-    width: 80%;
-    margin: 100px auto;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/formation.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.cta h1 {
-    color: #fff;
-    margin-bottom: 40px;
-    padding: 0 20px;
-}
-
-/* Footer */
 .footer {
     width: 100%;
     text-align: center;
-    padding: 70px 0 30px;
+    padding: 70px 20px 30px;
     background: #f9f9f9;
 }
 
@@ -389,6 +372,9 @@ nav img {
 
 .social-icons {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-icons a {
@@ -414,7 +400,7 @@ nav img {
     margin-top: 10px;
 }
 
-/* Mobile Menu and Responsive Styles */
+/* Mobile Menu Icon */
 nav .fa {
     display: none;
     color: #fff;
@@ -423,16 +409,9 @@ nav .fa {
     cursor: pointer;
 }
 
-.formations-header {
-    min-height: 60vh;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/formation-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
+/* Formations Section */
 .formations {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 80px 0;
     text-align: center;
@@ -543,6 +522,8 @@ nav .fa {
     margin-top: 20px;
     padding: 15px 20px;
     border-top: 1px solid #eee;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .price {
@@ -553,9 +534,9 @@ nav .fa {
 
 /* FORMATION DETAILS SECTION */
 .formation-details {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
     background: #f9f9f9;
     border-radius: 10px;
@@ -595,7 +576,7 @@ nav .fa {
 .tab-content {
     display: none;
     text-align: left;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .tab-content.active {
@@ -604,7 +585,7 @@ nav .fa {
 
 .programme-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 25px;
     margin: 40px 0;
 }
@@ -669,9 +650,9 @@ nav .fa {
 
 /* FEATURES SECTION */
 .formation-features {
-    width: 80%;
+    width: 90%;
     margin: 50px auto;
-    padding: 80px 0;
+    padding: 80px 20px;
     text-align: center;
 }
 
@@ -713,25 +694,102 @@ nav .fa {
     line-height: 1.6;
 }
 
-/* RESPONSIVE ADJUSTMENTS */
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Pour tablettes (768px et moins) */
 @media (max-width: 768px) {
-    .formations {
-        width: 90%;
+    nav {
+        padding: 2% 4%;
+    }
+    
+    nav img {
+        width: 150px;
+    }
+    
+    .text-box h1 {
+        font-size: 42px;
+    }
+    
+    .text-box p {
+        font-size: 20px;
+    }
+    
+    .course h1,
+    .facilities h1,
+    .cta h1,
+    .formations h1 {
+        font-size: 28px;
+    }
+    
+    .course,
+    .campus,
+    .facilities,
+    .testimonials,
+    .cta,
+    .formations,
+    .formation-details,
+    .formation-features {
+        width: 95%;
         padding: 60px 0;
     }
     
-    .formations h1 {
-        font-size: 2rem;
+    .row,
+    .formations-row {
+        gap: 15px;
     }
     
-    .formation-details {
-        width: 90%;
-        padding: 40px 0;
+    .course-col,
+    .campus-col,
+    .facilities-col,
+    .testimonial-col,
+    .formations-col {
+        flex: 1 1 100%;
     }
     
-    .tab-btn {
-        padding: 10px 20px;
-        font-size: 0.8rem;
+    .nav-links ul li {
+        display: block;
+        text-align: center;
+        padding: 12px 0;
+    }
+    
+    .nav-links {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav .fa {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 3;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .testimonial-col {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .testimonial-col img {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+    
+    .formation-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
     
     .programme-grid {
@@ -739,26 +797,223 @@ nav .fa {
     }
     
     .features-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .details-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .tab-btn {
+        white-space: nowrap;
     }
 }
 
+/* Pour mobiles (480px et moins) */
 @media (max-width: 480px) {
-    .formations-header .text-box h1 {
-        font-size: 1.8rem;
+    .text-box h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
     }
     
-    .formation-footer {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .price {
-        margin-bottom: 10px;
+    .text-box p {
+        font-size: 16px;
+        margin: 5px 0 30px;
     }
     
     .hero-btn {
+        padding: 10px 24px;
+        font-size: 16px;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .course h1,
+    .facilities h1,
+    .cta h1,
+    .formations h1 {
+        font-size: 24px;
+    }
+    
+    .course p,
+    .facilities p,
+    .formations p {
+        font-size: 14px;
+        padding: 0;
+    }
+    
+    .course-col h3,
+    .facilities-col h3,
+    .formations-col h3 {
+        font-size: 18px;
+    }
+    
+    .layer h3 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    
+    .cta {
+        padding: 60px 20px;
+        margin: 60px auto;
+    }
+    
+    .cta h1 {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+    
+    .formations-header {
+        min-height: 80vh;
+    }
+    
+    .formations-col {
+        margin-bottom: 30px;
+    }
+    
+    .formation-content {
+        padding: 0 15px;
+    }
+    
+    .formation-content ul li {
+        font-size: 0.85rem;
+        padding-left: 20px;
+    }
+    
+    .price {
+        font-size: 1rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .feature {
+        padding: 20px 15px;
+    }
+    
+    .feature i {
+        font-size: 2rem;
+    }
+    
+    .module {
+        padding: 20px 15px;
+    }
+    
+    .social-icons a {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    
+    .footer {
+        padding: 50px 15px 20px;
+    }
+    
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+/* Pour très petits mobiles (360px et moins) */
+@media (max-width: 360px) {
+    .text-box h1 {
+        font-size: 28px;
+    }
+    
+    .text-box p {
+        font-size: 14px;
+    }
+    
+    .hero-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    
+    .course-col,
+    .campus-col,
+    .facilities-col,
+    .testimonial-col,
+    .formations-col {
+        padding: 20px 15px;
+    }
+    
+    .formations-col h3 {
+        margin: 15px 15px 10px;
+        font-size: 1.2rem;
+    }
+    
+    .formation-footer {
+        padding: 10px 15px;
+    }
+    
+    .details-tabs {
+        gap: 5px;
+    }
+    
+    .tab-btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Pour les écrans larges (1200px et plus) */
+@media (min-width: 1200px) {
+    .course,
+    .campus,
+    .facilities,
+    .testimonials,
+    .cta,
+    .formations,
+    .formation-details,
+    .formation-features {
+        max-width: 1200px;
+    }
+}
+
+/* Pour éviter les débordements horizontaux */
+@media (max-width: 320px) {
+    html, body {
+        overflow-x: hidden;
         width: 100%;
-        text-align: center;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* Ajustements pour la hauteur sur mobiles */
+@media (max-height: 600px) {
+    .formations-header {
+        min-height: 120vh;
+    }
+    
+    .text-box {
+        top: 55%;
+    }
+}
+
+/* Support pour l'orientation paysage sur mobiles */
+@media (max-height: 480px) and (orientation: landscape) {
+    .formations-header {
+        min-height: 150vh;
+    }
+    
+    .text-box h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .text-box p {
+        font-size: 14px;
+        margin: 5px 0 20px;
+    }
+    
+    nav {
+        padding: 1% 4%;
     }
 }
