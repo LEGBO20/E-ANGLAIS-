@@ -1,354 +1,216 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - THE GOD FOOD</title>
-    <link rel="stylesheet" href="./contact.css" />
-    <link
-      rel="icon"
-      href="./images/logo-removebg-preview.png"
-      type="image/png"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="header-content">
-        <div class="logo">
-          <a href="./index.html"
-            ><img
-              src="./images/logo-removebg-preview.png"
-              alt="THE GOD FOOD Logo"
-          /></a>
-          <span class="logo-text">THE GOD FOOD</span>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | English Online</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="header contact-header">
         <nav>
-          <a href="../EXERCICE SITE INTERNET UVCI/index.html">Accueil</a>
-          <a href="../EXERCICE SITE INTERNET UVCI/index.html#africain"
-            >Plats Africains</a
-          >
-          <a href="../EXERCICE SITE INTERNET UVCI/index.html#europeen"
-            >Plats Européens</a
-          >
-          <a href="../EXERCICE SITE INTERNET UVCI/contact.html">Contact</a>
-          <a href="./propos.html">À Propos</a>
-          <a href="./carriere.html">Carrière</a>
+           <a href="index.html"><img src="images/logo-1.png" alt="Logo English Online"></a> 
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="apropos.html">À PROPOS</a></li>
+                <li><a href="formations.html">FORMATIONS</a></li>
+                <li><a href="bibliotheque.html">BLIBLIOTHEQUE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-      </div>
-    </header>
-
-    <section class="contact-hero">
-      <h1>📞 Contactez-Nous</h1>
-      <p>
-        Nous sommes à votre écoute pour toute question <br />
-        ou commande
-      </p>
+        <div class="text-box">
+            <h1>Contactez Notre Équipe</h1>
+            <p>Nous sommes là pour répondre à toutes vos questions sur nos formations en anglais.<br>Envoyez-nous un message ou contactez-nous directement.</p>
+            <a href="#contact-form" class="hero-btn1">Écrivez-nous</a>
+        </div> 
     </section>
 
-    <div class="contact-container">
-      <div class="contact-info">
-        <h2>Nos Coordonnées</h2>
-
-        <div class="info-item">
-          <div class="info-icon">📍</div>
-          <div class="info-content">
-            <h3>Adresse</h3>
-            <p>Cocody Angré, Abidjan<br />Côte d'Ivoire</p>
-          </div>
+    <!-- Contact Info Section -->
+    <section class="course">
+        <h1>Nos Coordonnées</h1>
+        <p>Plusieurs moyens pour nous joindre et obtenir des réponses à vos questions.</p>
+        <div class="row">
+            <div class="contact-info-col">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Adresse</h3>
+                <p>123 Avenue des Langues<br>75000 Abidjan, Côte d'Ivoire</p>
+            </div>
+            <div class="contact-info-col">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Téléphone</h3>
+                <p>+225 05 86 85 97 95<br>Lundi-Vendredi, 9h-18h</p>
+            </div>
+            <div class="contact-info-col">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>contact@englishonline.edu<br>support@englishonline.edu</p>
+            </div>
         </div>
-
-        <div class="info-item">
-          <div class="info-icon">📞</div>
-          <div class="info-content">
-            <h3>Téléphone</h3>
-            <p>+225 07 07 07 88 88 <br />+225 05 05 05 55 55</p>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <div class="info-icon">📧</div>
-          <div class="info-content">
-            <h3>Email</h3>
-            <p>contact@thegodfood.ci<br />commande@thegodfood.ci</p>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <div class="info-icon">⏰</div>
-          <div class="info-content">
-            <h3>Horaires d'Ouverture</h3>
-            <p>
-              Lundi - Dimanche : 10h00 - 22h00<br />Service de livraison
-              disponible
-            </p>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <div class="info-icon">🚚</div>
-          <div class="info-content">
-            <h3>Livraison</h3>
-            <p>
-              Livraison gratuite à partir de 15 000 FCFA<br />Zone de livraison
-              : Grand Abidjan
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-form">
-        <h2>Envoyez-nous un Message</h2>
-        <form id="contactForm" action="" method="POST">
-          <input
-            type="hidden"
-            name="_subject"
-            value="Nouveau message de THE GOD FOOD"
-          />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_next" />
-
-          <div class="form-group">
-            <label for="name">Nom Complet *</label>
-            <input
-              type="text"
-              id="name"
-              name="Nom"
-              required
-              placeholder="Votre nom et prénom"
-            />
-            <div class="error-message" id="nameError"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Téléphone *</label>
-            <input
-              type="tel"
-              id="phone"
-              name="Téléphone"
-              required
-              placeholder="+225 XX XX XX XX XX"
-            />
-            <div class="error-message" id="phoneError"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input
-              type="email"
-              id="email"
-              name="Email"
-              required
-              placeholder="votre.email@exemple.com"
-            />
-            <div class="error-message" id="emailError"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Sujet *</label>
-            <select id="subject" name="Sujet" required>
-              <option value="">Sélectionnez un sujet</option>
-              <option value="Commande">Passer une commande</option>
-              <option value="Information">Demande d'information</option>
-              <option value="Réservation">Réservation</option>
-              <option value="Réclamation">Réclamation</option>
-              <option value="Autre">Autre</option>
-            </select>
-            <div class="error-message" id="subjectError"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea
-              id="message"
-              name="Message"
-              required
-              placeholder="Décrivez votre demande en détail..."
-            ></textarea>
-            <div class="error-message" id="messageError"></div>
-          </div>
-
-          <button type="submit" class="submit-button" id="submitButton">
-            Envoyer le Message 📤
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <section class="map-section">
-      <div class="map-container">
-        <h2>🗺️ Notre Localisation</h2>
-        <div id="map" class="map"></div>
-      </div>
     </section>
 
-    <footer>
-      <p>&copy; 2025 THE GOD FOOD - Tous droits réservés</p>
-      <p>
-        🚚 Livraison gratuite à partir de 15 000 FCFA | 📞 Commandez au : +225
-        07 07 07 88 88
-      </p>
-      <p>📍 Abidjan, Côte d'Ivoire | ⏰ Ouvert 7j/7 de 10h à 22h</p>
-      <p>Créé par LEGBO STEVE MARCEL</p>
-    </footer>
+    <!-- Contact Form Section -->
+    <section class="campus" id="contact-form">
+        <h1>Envoyez-nous un Message</h1>
+        <p>Remplissez ce formulaire et nous vous répondrons dans les plus brefs délais.</p>
+        
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nom Complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="hero-btn2">Envoyer le Message</button>
+            </form>
+        </div>
+    </section>
 
+    <!-- FAQ Section -->
+    <section class="facilities">
+        <h1>Questions Fréquentes</h1>
+        <p>Consultez nos réponses aux questions les plus courantes.</p>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quels sont les horaires de support ?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Notre équipe de support est disponible du lundi au vendredi de 9h à 18h. Pour les questions urgentes en dehors de ces horaires, vous pouvez nous envoyer un email et nous vous répondrons dès la réouverture.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment puis-je m'inscrire à une formation ?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Vous pouvez vous inscrire directement sur notre plateforme en ligne via la page des formations. Si vous avez besoin d'assistance, notre équipe peut vous guider étape par étape par téléphone ou par email.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quelles sont les méthodes de paiement acceptées ?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Nous acceptons les cartes de crédit (Visa, MasterCard), les virements bancaires et les paiements via PayPal. Toutes les transactions sont sécurisées.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="testimonials">
+        <h1>Notre Équipe</h1>
+        <p>Rencontrez les membres de notre équipe dédiée à votre réussite.</p>
+
+        <div class="row">
+            <div class="team-member">
+                <img src="images/team1.jpg" alt="Directrice Pédagogique">
+                <h3>Sophie Martin</h3>
+                <p>Directrice Pédagogique</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images/team2.jpg" alt="Responsable Support">
+                <h3>Jean Dupont</h3>
+                <p>Responsable Support</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images/team3.jpg" alt="Conseillère aux Étudiants">
+                <h3>Emma Laurent</h3>
+                <p>Conseillère aux Étudiants</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>English Online</h4>
+        <p>Plateforme d'apprentissage de l'anglais en ligne innovante, offrant des cours de qualité<br>adaptés à tous les niveaux avec des professeurs certifiés.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">Réalisé par <i class="far fa-heart"></i> LEGBO STEVE MARCEL</p>
+    </section>
+
+    <!-- JavaScript -->
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("contactForm");
-        const submitButton = document.getElementById("submitButton");
-
-        // Fonction pour valider un champ
-        function validateField(field, errorElement, validationFunction) {
-          const value = field.value.trim();
-          const isValid = validationFunction(value);
-
-          if (!isValid) {
-            field.style.borderColor = "#ff3860";
-            errorElement.textContent = getErrorMessage(field.id);
-            return false;
-          } else {
-            field.style.borderColor = "#42a5f5";
-            errorElement.textContent = "";
-            return true;
-          }
+        // Menu mobile
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+        }
+        
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            setTimeout(() => {
+                navLinks.style.display = "none";
+            }, 500);
         }
 
-        // Fonction pour obtenir les messages d'erreur
-        function getErrorMessage(fieldId) {
-          const messages = {
-            name: "Veuillez entrer votre nom complet",
-            phone: "Veuillez entrer un numéro de téléphone valide",
-            email: "Veuillez entrer une adresse email valide",
-            subject: "Veuillez sélectionner un sujet",
-            message: "Veuillez écrire un message",
-          };
-          return messages[fieldId] || "Ce champ est requis";
-        }
-
-        // Fonctions de validation
-        function validateName(name) {
-          return name.length >= 2;
-        }
-
-        function validatePhone(phone) {
-          const phoneRegex = /^(\+225|225)?[0-9]{8,10}$/;
-          return phoneRegex.test(phone.replace(/\s/g, ""));
-        }
-
-        function validateEmail(email) {
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          return emailRegex.test(email);
-        }
-
-        function validateSubject(subject) {
-          return subject !== "";
-        }
-
-        function validateMessage(message) {
-          return message.length >= 10;
-        }
-
-        // Validation en temps réel
-        const nameField = document.getElementById("name");
-        const phoneField = document.getElementById("phone");
-        const emailField = document.getElementById("email");
-        const subjectField = document.getElementById("subject");
-        const messageField = document.getElementById("message");
-
-        nameField.addEventListener("blur", function () {
-          validateField(
-            nameField,
-            document.getElementById("nameError"),
-            validateName
-          );
+        // FAQ accordéon
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Fermer toutes les autres réponses
+                document.querySelectorAll('.faq-answer').forEach(item => {
+                    if (item !== answer) {
+                        item.style.display = 'none';
+                        item.previousElementSibling.querySelector('i').className = 'fas fa-plus';
+                    }
+                });
+                
+                // Basculer la réponse actuelle
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.className = 'fas fa-plus';
+                } else {
+                    answer.style.display = 'block';
+                    icon.className = 'fas fa-minus';
+                }
+            });
         });
-
-        phoneField.addEventListener("blur", function () {
-          validateField(
-            phoneField,
-            document.getElementById("phoneError"),
-            validatePhone
-          );
-        });
-
-        emailField.addEventListener("blur", function () {
-          validateField(
-            emailField,
-            document.getElementById("emailError"),
-            validateEmail
-          );
-        });
-
-        subjectField.addEventListener("change", function () {
-          validateField(
-            subjectField,
-            document.getElementById("subjectError"),
-            validateSubject
-          );
-        });
-
-        messageField.addEventListener("blur", function () {
-          validateField(
-            messageField,
-            document.getElementById("messageError"),
-            validateMessage
-          );
-        });
-
-        // Validation à la soumission
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          const isNameValid = validateField(
-            nameField,
-            document.getElementById("nameError"),
-            validateName
-          );
-          const isPhoneValid = validateField(
-            phoneField,
-            document.getElementById("phoneError"),
-            validatePhone
-          );
-          const isEmailValid = validateField(
-            emailField,
-            document.getElementById("emailError"),
-            validateEmail
-          );
-          const isSubjectValid = validateField(
-            subjectField,
-            document.getElementById("subjectError"),
-            validateSubject
-          );
-          const isMessageValid = validateField(
-            messageField,
-            document.getElementById("messageError"),
-            validateMessage
-          );
-
-          if (
-            isNameValid &&
-            isPhoneValid &&
-            isEmailValid &&
-            isSubjectValid &&
-            isMessageValid
-          ) {
-            // Si tous les champs sont valides, on peut soumettre le formulaire
-            // Redirection vers la page de confirmation
-            window.location.href = "./message.html";
-          } else {
-            // Afficher un message d'erreur général
-            alert(
-              "Veuillez corriger les erreurs dans le formulaire avant de soumettre."
-            );
-          }
-        });
-      });
     </script>
-    <!-- API Google Maps -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API&callback=initMap"
-      async
-      defer
-    ></script>
-  </body>
+</body>
 </html>
