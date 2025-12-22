@@ -1,3 +1,4 @@
+/* FORMATIONS PAGE RESPONSIVE STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,10 @@
 }
 
 /* Header Section */
-.header {
+.formations-header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1920);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/formation.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -150,18 +151,16 @@ nav img {
     background: #fff;
     border-radius: 10px;
     margin-bottom: 5%;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 0 0 30px;
     transition: all 0.3s ease;
     position: relative;
-}
-
-.formations-col:hover {
-    box-shadow: 0 10px 30px rgb(252, 0, 0);
-    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .formations-col.highlight {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(244, 67, 54, 0.2);
     border: 2px solid #f44336;
 }
 
@@ -173,14 +172,14 @@ nav img {
     color: white;
     padding: 5px 15px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: 600;
     z-index: 1;
 }
 
 .formations-col img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     display: block;
 }
@@ -188,25 +187,33 @@ nav img {
 .formations-col h3 {
     text-align: center;
     font-weight: 600;
-    margin: 20px 20px 15px;
+    margin: 20px 0 15px;
     font-size: 22px;
+    color: #222;
+    padding: 0 20px;
+}
+
+.formations-col:hover {
+    box-shadow: 0 10px 30px rgba(252, 0, 0, 0.2);
+    transform: translateY(-10px);
 }
 
 .formation-content {
-    padding: 0 20px 20px;
+    padding: 0 20px;
+    text-align: left;
 }
 
-.formation-content > p {
+.formation-content p {
     color: #555;
     margin-bottom: 15px;
-    text-align: left;
     font-size: 14px;
+    padding: 0;
+    text-align: left;
 }
 
 .formation-content ul {
-    text-align: left;
     margin-bottom: 25px;
-    padding-left: 5px;
+    padding-left: 0;
 }
 
 .formation-content ul li {
@@ -229,7 +236,8 @@ nav img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    margin-top: 20px;
+    padding: 15px 20px 0;
     border-top: 1px solid #eee;
 }
 
@@ -240,7 +248,7 @@ nav img {
 }
 
 .price pre {
-    display: inline;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -248,24 +256,10 @@ nav img {
 .formation-details {
     width: 80%;
     margin: auto;
-    text-align: center;
     padding: 100px 0;
+    text-align: center;
     background: #f9f9f9;
     border-radius: 10px;
-}
-
-.formation-details h1 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.formation-details > p {
-    color: #777;
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 50px;
 }
 
 .details-tabs {
@@ -277,14 +271,14 @@ nav img {
 }
 
 .tab-btn {
-    padding: 12px 34px;
+    padding: 12px 25px;
     background: #fff;
-    border: 1px solid #fff;
-    border-radius: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
     cursor: pointer;
     font-weight: 600;
-    transition: all 0.5s ease;
-    font-size: 18px;
+    transition: all 0.3s ease;
+    font-size: 14px;
 }
 
 .tab-btn:hover {
@@ -302,23 +296,18 @@ nav img {
 .tab-content {
     display: none;
     text-align: left;
+    padding: 0 20px;
 }
 
 .tab-content.active {
     display: block;
 }
 
-.tab-content h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 30px;
-}
-
 .programme-grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     margin: 40px 0;
 }
 
@@ -326,7 +315,7 @@ nav img {
     flex-basis: 31%;
     background: #fff;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
@@ -340,11 +329,14 @@ nav img {
     font-size: 18px;
     margin-bottom: 15px;
     color: #333;
+    display: flex;
+    align-items: center;
 }
 
 .module h3 i {
     color: #f44336;
     margin-right: 10px;
+    font-size: 20px;
 }
 
 .module ul {
@@ -361,7 +353,7 @@ nav img {
 .formation-results {
     background: #fff;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-top: 40px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
@@ -376,42 +368,29 @@ nav img {
     color: #555;
     font-size: 14px;
     line-height: 1.6;
+    text-align: left;
 }
 
-/* Formation Features Section */
+/* Features Section */
 .formation-features {
     width: 80%;
-    margin: 100px auto 0;
-    text-align: center;
+    margin: auto;
     padding: 100px 0;
-}
-
-.formation-features h1 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.formation-features > p {
-    color: #777;
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 50px;
+    text-align: center;
 }
 
 .features-grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     margin-top: 50px;
 }
 
 .feature {
     flex-basis: 31%;
     background: white;
-    padding: 30px 20px;
+    padding: 30px 25px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
@@ -438,7 +417,6 @@ nav img {
     color: #666;
     font-size: 14px;
     line-height: 1.6;
-    margin: 0;
 }
 
 /* Testimonials Section */
@@ -491,7 +469,7 @@ nav img {
 .cta {
     width: 80%;
     margin: 100px auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/training.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -539,7 +517,7 @@ nav img {
     color: #777;
 }
 
-/* Mobile Menu Icon */
+/* Mobile Menu and Responsive Styles */
 nav .fa {
     display: none;
     color: #fff;
@@ -548,8 +526,8 @@ nav .fa {
     cursor: pointer;
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 700px) {
+    /* Header adjustments */
     .text-box h1 {
         font-size: 28px;
     }
@@ -558,6 +536,7 @@ nav .fa {
         font-size: 14px;
     }
     
+    /* Navigation */
     .nav-links {
         position: fixed;
         background: #f44336;
@@ -587,28 +566,76 @@ nav .fa {
         display: block;
     }
     
+    /* Layout adjustments */
     .row {
         flex-direction: column;
     }
     
-    .formations-col, .module, .feature, .testimonial-col {
+    /* Formations columns */
+    .formations-col {
         flex-basis: 100%;
         margin-bottom: 30px;
     }
     
-    .formations, .formation-details, .formation-features, .testimonials {
+    /* Programme grid */
+    .programme-grid {
+        flex-direction: column;
+    }
+    
+    .module {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Features grid */
+    .features-grid {
+        flex-direction: column;
+    }
+    
+    .feature {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    
+    /* Sections padding */
+    .formations, .formation-details, .formation-features {
         padding: 50px 0;
+        width: 90%;
     }
     
-    .hero-btn {
-        padding: 10px 25px;
-        font-size: 16px;
+    /* Details tabs */
+    .details-tabs {
+        flex-direction: column;
+        align-items: center;
     }
     
+    .tab-btn {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    
+    /* Formation footer */
+    .formation-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .price {
+        margin-bottom: 15px;
+    }
+    
+    /* CTA adjustments */
+    .cta h1 {
+        font-size: 24px;
+    }
+    
+    /* Testimonials */
     .testimonial-col {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        flex-basis: 100%;
     }
     
     .testimonial-col img {
@@ -616,32 +643,64 @@ nav .fa {
         margin-bottom: 20px;
     }
     
-    .cta h1 {
-        font-size: 24px;
+    /* Mobile menu icon */
+    .fa-bars, .fa-times {
+        display: block !important;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
     }
     
-    .formation-footer {
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-start;
-    }
-    
-    .details-tabs {
-        justify-content: flex-start;
-        overflow-x: auto;
-    }
-    
-    .tab-btn {
-        white-space: nowrap;
+    /* Button adjustments */
+    .hero-btn {
         padding: 10px 25px;
         font-size: 16px;
     }
     
-    .programme-grid {
-        flex-direction: column;
+    /* Popular badge */
+    .popular-badge {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 701px) and (max-width: 1024px) {
+    .formations-col {
+        flex-basis: 48%;
     }
     
-    .features-grid {
+    .module {
+        flex-basis: 48%;
+    }
+    
+    .feature {
+        flex-basis: 48%;
+    }
+    
+    .formations, .formation-details, .formation-features {
+        width: 90%;
+    }
+    
+    .tab-content {
+        padding: 0 10px;
+    }
+    
+    .formation-footer {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .price {
+        margin-bottom: 15px;
+    }
+}
+
+/* Large desktop adjustments */
+@media (min-width: 1200px) {
+    .formations, .formation-details, .formation-features {
+        max-width: 1200px;
     }
 }
