@@ -112,7 +112,7 @@
 
         .text-box p {
             margin: 10px 0 40px;
-            font-size: clamp(16px, 3vw, 20px);
+            font-size: clamp(14px, 3vw, 18px);
             color: #fff;
             line-height: 1.6;
             animation: fadeInUp 1s ease;
