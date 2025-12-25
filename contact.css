@@ -18,8 +18,7 @@
         .header {
             min-height: 70vh;
             width: 100%;
-            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), 
-                              url('https://images.unsplash.com/photo-1596524430615-b46475ddff6e?w=1200');
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/contact.jpg);
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
@@ -2504,7 +2503,7 @@ nav img {
 .cta {
     width: 80%;
     margin: 100px auto;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/training.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/contact.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
