@@ -318,6 +318,7 @@ nav .fa {
 .campus-col {
     border-radius: var(--border-radius);
     position: relative;
+    overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: all var(--transition-speed) ease;
 }
@@ -376,6 +377,7 @@ nav .fa {
 .facilities-col {
     background: var(--color-background);
     border-radius: var(--border-radius);
+    overflow: hidden;
     transition: all var(--transition-speed) ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
