@@ -21,8 +21,7 @@
         .header {
             min-height: 100vh;
             width: 100%;
-            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), 
-                              url(images/acc.jpg);
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/acc.jpg);
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
@@ -259,17 +258,18 @@
         }
 
         .layer {
-            background: transparent;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: all 0.5s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
         .layer:hover {
             background: rgba(226, 0, 0, 0.7);
