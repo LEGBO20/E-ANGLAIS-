@@ -188,7 +188,6 @@ nav .fa {
     line-height: 1.2;
     font-weight: 600;
     white-space: nowrap;
-    text-overflow: ellipsis;
     animation: fadeInDown 1s ease;
 }
 
