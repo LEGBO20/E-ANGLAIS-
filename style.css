@@ -110,7 +110,7 @@
         }
 
         .text-box h1 {
-            font-size: clamp(32px, 6vw, 62px);
+            font-size: 62px;
             margin-bottom: 20px;
             line-height: 1.2;
             animation: fadeInDown 1s ease;
