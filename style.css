@@ -115,8 +115,6 @@
             line-height: 1.2;
             animation: fadeInDown 1s ease;
             white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         .text-box p {
