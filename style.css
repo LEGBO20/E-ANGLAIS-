@@ -766,3 +766,20 @@ style {
         outline: 2px solid ButtonText;
     }
 }
+/* À ajouter dans un fichier de sécurité séparé */
+/* Protection contre les attaques de clickjacking */
+body {
+    position: relative !important;
+}
+
+/* Détection des iframes malveillantes */
+iframe:not([src^="/"]):not([src^="https://votredomaine.com"]) {
+    display: none !important;
+}
+
+/* Masquage des données en mode impression */
+@media print {
+    .sensitive-data {
+        display: none !important;
+    }
+}
