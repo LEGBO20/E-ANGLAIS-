@@ -110,7 +110,7 @@
         }
 
         .text-box h1 {
-            font-size: clamp(20px, 4vw, 62px);
+            font-size: clamp(20px, 4vw, 60px);
             margin-bottom: 20px;
             line-height: 1.2;
             animation: fadeInDown 1s ease;
@@ -236,7 +236,6 @@
 
         .campus-col {
             border-radius: 10px;
-            overflow: hidden;
             position: relative;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
@@ -319,7 +318,6 @@
         .facilities-col {
             background: white;
             border-radius: 10px;
-            overflow: hidden;
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
         }
